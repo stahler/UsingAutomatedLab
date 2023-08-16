@@ -1,5 +1,5 @@
 # UsingAutomatedLab
-Following is how I set up my Active Directory Lab using AutomatedLab.
+Following is how I set up my Active Directory Lab using [AutomatedLab](https://automatedlab.org/en/latest/).
 1. Ensure you have Hyper-V set up on the host.  <br>_Install necessitates a reboot._
 ![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/9647705f-dcb4-4f9a-a11e-3d8574330ab6)
 
