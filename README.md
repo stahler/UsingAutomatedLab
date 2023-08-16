@@ -3,7 +3,7 @@ Following is how I set up my Active Directory Lab (one domain controller and one
 1. Ensure you have Hyper-V set up on the host.  <br>_Install necessitates a reboot._
 ![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/12bd3346-9b3f-40ec-92bd-b2e5841647b5)
 
-2. Install the PowerShell module.<br>_Perform all of the steps in an elevated session._<br>
+2. Install the PowerShell module.<br>_Perform all of the steps in an __elevated__ session._<br>
 ```PowerShell
 Find-Module AutomatedLab | Install-Module
 ```
@@ -17,7 +17,7 @@ This creates the necessary folder structure.
 4.  Copy your ISO files to the ISO directory (C:\LabSources\ISOs)<br>
 _I had issues with evaluation editions of the Operating Systems._
 
-5.  Verify the ISOs (pay attention to the OperatingSystemName)
+5.  Verify the ISOs (pay attention to the OperatingSystemName, you will use them shortly)
 ```PowerShell
 Get-LabAvailableOperatingSystem
 ```
@@ -25,7 +25,7 @@ Get-LabAvailableOperatingSystem
 
 6. Create a lab definition
 ```PowerShell
-New-LabDefinition -Name TestLab -DefaultVirtualizationEngine HyperV
+New-LabDefinition -Name ADTestLab -DefaultVirtualizationEngine HyperV
 ```
 This does quite a few things  including pulling in the SysInternals suite
 
