@@ -55,7 +55,7 @@ Install-Lab
 # Take a break, you deserve it! Plus this takes a few minutes.
 ```
 9.  You can get a high-level summary of what was created<br>
-The default credentials are Administrator/Somepass1
+_The default credentials are Administrator/Somepass1._
 ```PowerShell
 Show-LabDeploymentSummary -Detailed
 ```
