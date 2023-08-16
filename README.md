@@ -1,5 +1,5 @@
 # UsingAutomatedLab
-Following is how I set up my Active Directory Lab (one domain controller and one member server) using [AutomatedLab](https://automatedlab.org/en/latest/).
+Following is how I set up my Active Directory Lab (one domain controller and one member server) in under 30 minutes with just a few lines of PowerShell code using the wonderful [AutomatedLab](https://automatedlab.org/en/latest/) module.
 1. Ensure you have Hyper-V set up on the host.  <br>_Install necessitates a reboot._
 ![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/12bd3346-9b3f-40ec-92bd-b2e5841647b5)
 
