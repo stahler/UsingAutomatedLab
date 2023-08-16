@@ -1,7 +1,7 @@
 # UsingAutomatedLab
 Following is how I set up my Active Directory Lab using [AutomatedLab](https://automatedlab.org/en/latest/).
 1. Ensure you have Hyper-V set up on the host.  <br>_Install necessitates a reboot._
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/9647705f-dcb4-4f9a-a11e-3d8574330ab6)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/b5675fd6-0fee-49be-aa18-0725d3a8bf8f)
 
 2. Install the PowerShell module.<br>_Perform all of the steps in an elevated session._<br>
 ```PowerShell
@@ -12,7 +12,7 @@ Find-Module AutomatedLab | Install-Module -Scope AllUsers
  New-LabSourcesFolder
 ```
 This creates the necessary folder structure.
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/9b51c690-09cb-4f1a-a963-8ff4d1c67c02)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/1174cc1a-f19f-489c-a206-5f0b8b5f4d64)
 
 4.  Copy your ISO files to the ISO directory (C:\LabSources\ISOs)<br>
 _I had issues with evaluation editions of the Operating Systems._
@@ -21,14 +21,13 @@ _I had issues with evaluation editions of the Operating Systems._
 ```PowerShell
 Get-LabAvailableOperatingSystem
 ```
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/bb3b3c98-35a4-47f1-adbf-74dff2338cdd)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/4203e3da-d817-4fdf-a871-4da09824e0b7)
 
 6. Create a lab definition
 ```PowerShell
 New-LabDefinition -Name TestLab -DefaultVirtualizationEngine HyperV
 ```
 This does quite a few things  including pulling in the SysInternals suite
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/fce4f036-82ec-4fd1-9de3-6b17c5ff377c)
 
 7. Add machines to our Lab Definition
 ```PowerShell
@@ -59,10 +58,10 @@ Install-Lab
 ```PowerShell
 Show-LabDeploymentSummary -Detailed
 ```
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/62249470-eb56-4830-8c20-a2e72651e760)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/d12fdc03-7a5f-4595-9c3a-8342a73a2a75)
 
 10.  Open Hyper-V to verify
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/3589f518-8d2a-4f43-b549-35708418b3ec)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/411a4b01-6522-41f9-b76b-af624e889db7)
 
 11. Want to connect to a machine from the commandline?
 ```PowerShell
