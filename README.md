@@ -5,7 +5,7 @@ Following is how I set up my Active Directory Lab using [AutomatedLab](https://a
 
 2. Install the PowerShell module.<br>_Perform all of the steps in an elevated session._<br>
 ```PowerShell
-Find-Module AutomatedLab | Install-Module -Scope AllUsers
+Find-Module AutomatedLab | Install-Module
 ```
 3.  Create and populate a new labsources folder
 ```PowerShell
