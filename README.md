@@ -1,7 +1,7 @@
 # UsingAutomatedLab
 Following is how I set up my Active Directory Lab using [AutomatedLab](https://automatedlab.org/en/latest/).
 1. Ensure you have Hyper-V set up on the host.  <br>_Install necessitates a reboot._
-![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/b5675fd6-0fee-49be-aa18-0725d3a8bf8f)
+![image](https://github.com/stahler/UsingAutomatedLab/assets/1991193/12bd3346-9b3f-40ec-92bd-b2e5841647b5)
 
 2. Install the PowerShell module.<br>_Perform all of the steps in an elevated session._<br>
 ```PowerShell
